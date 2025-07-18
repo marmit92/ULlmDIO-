@@ -1,0 +1,1321 @@
+@prefix : <http://example.org/industry5.0#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Industry5Ontology rdfs:label "Industry 5.0 Ontology" .
+:Industry5Ontology owl:versionInfo "1.0" .
+:Industry5Ontology rdfs:comment "This ontology provides a formal model for Industry 5.0, the fifth industrial revolution, which emphasizes human-machine collaboration, sustainability, resilience, and societal well-being beyond mere economic growth and automation." .
+<http://example.org/industry5.0> rdf:type owl:Ontology ;
+  rdfs:label "Industry 5.0 Ontology IRI" ;
+  owl:versionInfo "1.0" ;
+  rdfs:comment "The IRI for the Industry 5.0 ontology, representing a human-centric industrial paradigm integrating advanced technologies with worker welfare and environmental sustainability." .
+
+
+:Industry5Ontology rdf:type owl:Ontology .
+
+:AI rdf:type owl:Class .
+:AugmentedReality rdf:type owl:Class .
+:BigDataAnalytics rdf:type owl:Class .
+:Biodiversity rdf:type owl:Class .
+:Blockchain rdf:type owl:Class .
+:Challenge rdf:type owl:Class .
+:CircularEconomyPractice rdf:type owl:Class .
+:ClimateChange rdf:type owl:Class .
+:Collaboration rdf:type owl:Class .
+:CollaborativeProcess rdf:type owl:Class .
+:CulturalDifference rdf:type owl:Class .
+:CyberPhysicalSystem rdf:type owl:Class .
+:DecisionMaking rdf:type owl:Class .
+:EconomicImpact rdf:type owl:Class .
+:Economics rdf:type owl:Class .
+:EmergingTechnology rdf:type owl:Class .
+:EnvironmentalImpact rdf:type owl:Class .
+:EthicalConsideration rdf:type owl:Class .
+:FeedbackMechanism rdf:type owl:Class .
+:GlobalDisruption rdf:type owl:Class .
+:GlobalHumanMachineCollaboration rdf:type owl:Class .
+:Human rdf:type owl:Class .
+:HumanCentricDesign rdf:type owl:Class .
+:HumanCobotInteraction rdf:type owl:Class .
+:HumanCreativity rdf:type owl:Class .
+:HumanMachineCollaboration rdf:type owl:Class .
+:HumanMachineTeam rdf:type owl:Class .
+:HumanWorker rdf:type owl:Class ;
+  rdfs:subClassOf :Human .
+:Implementation rdf:type owl:Class .
+:Inclusivity rdf:type owl:Class .
+:IndustrialOperation rdf:type owl:Class .
+:Industry4.0 rdf:type owl:Class .
+:Industry5.0 rdf:type owl:Class .
+:Industry5.0Adoption rdf:type owl:Class .
+:Industry5.0Ecosystem rdf:type owl:Class .
+:Industry5.0Process rdf:type owl:Class .
+:Industry5.0Product rdf:type owl:Class .
+:IntegrationChallenge rdf:type owl:Class .
+:Interaction rdf:type owl:Class .
+:IoTDevice rdf:type owl:Class .
+:KeyProcess rdf:type owl:Class .
+:LegacySystem rdf:type owl:Class .
+:LifecycleStage rdf:type owl:Class .
+:Machine rdf:type owl:Class .
+:MachineEfficiency rdf:type owl:Class .
+:MainPillar rdf:type owl:Class .
+:Manufacturing rdf:type owl:Class .
+:MassPersonalization rdf:type owl:Class .
+:Metric rdf:type owl:Class .
+:Outcome rdf:type owl:Class .
+:Process rdf:type owl:Class .
+:PsychologicalImpact rdf:type owl:Class .
+:QualityAssurance rdf:type owl:Class .
+:Resilience rdf:type owl:Class .
+:ResilienceStrategy rdf:type owl:Class .
+:ResilientSystem rdf:type owl:Class .
+:Risk rdf:type owl:Class .
+:Role rdf:type owl:Class .
+:SafetyProtocol rdf:type owl:Class .
+:Skill rdf:type owl:Class .
+:SocialSustainability rdf:type owl:Class .
+:SocietalValue rdf:type owl:Class .
+:Stakeholder rdf:type owl:Class .
+:Standard rdf:type owl:Class .
+:SupplyChain rdf:type owl:Class .
+:Sustainability rdf:type owl:Class .
+:SustainabilityGoal rdf:type owl:Class .
+:Technology rdf:type owl:Class .
+:Traceability rdf:type owl:Class .
+:TrainingMethod rdf:type owl:Class .
+:Type rdf:type owl:Class .
+:Value rdf:type owl:Class .
+:VirtualReality rdf:type owl:Class .
+:WellBeingMetric rdf:type owl:Class .
+:Worker rdf:type owl:Class .
+:WorkforceTransformation rdf:type owl:Class .
+
+:achievesResilience rdf:type owl:ObjectProperty ;
+  rdfs:domain :SupplyChain ;
+  rdfs:range :Resilience .
+:adaptsTo rdf:type owl:ObjectProperty ;
+  rdfs:domain :ResilientSystem ;
+  rdfs:range :ClimateChange .
+:addressesDifference rdf:type owl:ObjectProperty ;
+  rdfs:domain :GlobalHumanMachineCollaboration ;
+  rdfs:range :CulturalDifference .
+:addressesDisruption rdf:type owl:ObjectProperty ;
+  rdfs:domain :ResilienceStrategy ;
+  rdfs:range :GlobalDisruption .
+:affectsTransformation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :WorkforceTransformation .
+:appliesAnalytics rdf:type owl:ObjectProperty ;
+  rdfs:domain :BigDataAnalytics ;
+  rdfs:range :Industry5.0 .
+:appliesTo rdf:type owl:ObjectProperty ;
+  rdfs:domain :EthicalConsideration ;
+  rdfs:range :Collaboration .
+:appliesToInteraction rdf:type owl:ObjectProperty ;
+  rdfs:domain :SafetyProtocol ;
+  rdfs:range :HumanCobotInteraction .
+:buildsOn rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Industry4.0 .
+:challengesIntegration rdf:type owl:ObjectProperty ;
+  rdfs:domain :LegacySystem ;
+  rdfs:range :IntegrationChallenge .
+:collaboratesIn rdf:type owl:ObjectProperty ;
+  rdfs:domain :Stakeholder ;
+  rdfs:range :Industry5.0Ecosystem .
+:collaboratesWith rdf:type owl:ObjectProperty ;
+  rdfs:domain :Machine ;
+  rdfs:range :Human .
+:createsValueBeyond rdf:type owl:ObjectProperty ;
+  rdfs:domain :Value ;
+  rdfs:range :Economics .
+:definesGoal rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :SustainabilityGoal .
+:differsFrom rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Industry4.0 .
+:empowersIn rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :DecisionMaking .
+:enablesResilience rdf:type owl:ObjectProperty ;
+  rdfs:domain :CyberPhysicalSystem ;
+  rdfs:range :Resilience .
+:enhancesTraceability rdf:type owl:ObjectProperty ;
+  rdfs:domain :Blockchain ;
+  rdfs:range :Traceability .
+:ensuresResilience rdf:type owl:ObjectProperty ;
+  rdfs:domain :Collaboration ;
+  rdfs:range :Resilience .
+:existsBetween rdf:type owl:ObjectProperty ;
+  rdfs:domain :FeedbackMechanism ;
+  rdfs:range :Machine .
+:existsIn rdf:type owl:ObjectProperty ;
+  rdfs:domain :Challenge ;
+  rdfs:range :Implementation .
+:followsStandard rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Standard .
+:hasAIRole rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Role .
+:hasAdaptation rdf:type owl:ObjectProperty ;
+  rdfs:domain :ResilientSystem ;
+  rdfs:range :ClimateChange .
+:hasAddressingMethod rdf:type owl:ObjectProperty ;
+  rdfs:domain :GlobalHumanMachineCollaboration ;
+  rdfs:range :CulturalDifference .
+:hasApplication rdf:type owl:ObjectProperty ;
+  rdfs:domain :BigDataAnalytics ;
+  rdfs:range :Industry5.0 .
+:hasBuildingRelation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Industry4.0 .
+:hasChallengeWith rdf:type owl:ObjectProperty ;
+  rdfs:domain :IntegrationChallenge ;
+  rdfs:range :LegacySystem .
+:hasCollaboration rdf:type owl:ObjectProperty ;
+  rdfs:domain :Stakeholder ;
+  rdfs:range :Industry5.0Ecosystem .
+:hasDifference rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Industry4.0 .
+:hasEconomicImpact rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0Adoption ;
+  rdfs:range :EconomicImpact .
+:hasEffectOn rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :WorkforceTransformation .
+:hasEmpowerment rdf:type owl:ObjectProperty ;
+  rdfs:domain :Worker ;
+  rdfs:range :DecisionMaking .
+:hasEnablement rdf:type owl:ObjectProperty ;
+  rdfs:domain :CyberPhysicalSystem ;
+  rdfs:range :Resilience .
+:hasEnhancement rdf:type owl:ObjectProperty ;
+  rdfs:domain :Blockchain ;
+  rdfs:range :Traceability .
+:hasEthicalConsideration rdf:type owl:ObjectProperty ;
+  rdfs:domain :Collaboration ;
+  rdfs:range :EthicalConsideration .
+:hasExpectedOutcome rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Outcome .
+:hasFeedbackMechanism rdf:type owl:ObjectProperty ;
+  rdfs:domain :Human ;
+  rdfs:range :FeedbackMechanism .
+:hasImpactOn rdf:type owl:ObjectProperty ;
+  rdfs:domain :AugmentedReality ;
+  rdfs:range :Process .
+:hasImplementationChallenge rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Challenge .
+:hasInclusivityPromotion rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanMachineTeam ;
+  rdfs:range :Inclusivity .
+:hasIntegratedTechnology rdf:type owl:ObjectProperty ;
+  rdfs:domain :Process ;
+  rdfs:range :Technology .
+:hasIntegration rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanCreativity ;
+  rdfs:range :MachineEfficiency .
+:hasInteractionMethod rdf:type owl:ObjectProperty ;
+  rdfs:domain :Interaction ;
+  rdfs:range :Interaction .
+:hasKeyProcess rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :KeyProcess .
+:hasLifecycleStage rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0Product ;
+  rdfs:range :LifecycleStage .
+:hasMainPillar rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :MainPillar .
+:hasMaintenance rdf:type owl:ObjectProperty ;
+  rdfs:domain :CollaborativeProcess ;
+  rdfs:range :QualityAssurance .
+:hasMassPersonalization rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0Process ;
+  rdfs:range :MassPersonalization .
+:hasMetric rdf:type owl:ObjectProperty ;
+  rdfs:domain :EnvironmentalImpact ;
+  rdfs:range :Metric .
+:hasMitigation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Risk ;
+  rdfs:range :Industry5.0 .
+:hasPreservation rdf:type owl:ObjectProperty ;
+  rdfs:domain :IndustrialOperation ;
+  rdfs:range :Biodiversity .
+:hasPrioritizedValue rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :SocietalValue .
+:hasPromotion rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :CircularEconomyPractice .
+:hasPsychologicalImpact rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanMachineCollaboration ;
+  rdfs:range :PsychologicalImpact .
+:hasResilienceAchievement rdf:type owl:ObjectProperty ;
+  rdfs:domain :SupplyChain ;
+  rdfs:range :Resilience .
+:hasResilienceMechanism rdf:type owl:ObjectProperty ;
+  rdfs:domain :Collaboration ;
+  rdfs:range :Resilience .
+:hasRole rdf:type owl:ObjectProperty ;
+  rdfs:domain :Human ;
+  rdfs:range :Role .
+:hasSafetyProtocol rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanCobotInteraction ;
+  rdfs:range :SafetyProtocol .
+:hasSkill rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanWorker ;
+  rdfs:range :Skill .
+:hasStakeholder rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Stakeholder .
+:hasStandard rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Standard .
+:hasStrategy rdf:type owl:ObjectProperty ;
+  rdfs:domain :GlobalDisruption ;
+  rdfs:range :ResilienceStrategy .
+:hasSupportingTechnology rdf:type owl:ObjectProperty ;
+  rdfs:domain [ owl:unionOf ( :HumanCentricDesign :Sustainability ) ] ;
+  rdfs:range [ owl:unionOf ( :EmergingTechnology :Technology ) ] .
+:hasSustainabilityGoal rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :SustainabilityGoal .
+:hasTrackingMetric rdf:type owl:ObjectProperty ;
+  rdfs:domain :SocialSustainability ;
+  rdfs:range :Metric .
+:hasTrainingMethod rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0Process ;
+  rdfs:range :TrainingMethod .
+:hasType rdf:type owl:ObjectProperty ;
+  rdfs:domain :Machine ;
+  rdfs:range :Type .
+:hasUsage rdf:type owl:ObjectProperty ;
+  rdfs:domain :IoTDevice ;
+  rdfs:range :Manufacturing .
+:hasValueCreation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Value ;
+  rdfs:range :Economics .
+:hasWellBeingMetric rdf:type owl:ObjectProperty ;
+  rdfs:domain :Human ;
+  rdfs:range :WellBeingMetric .
+:impactsAdoption rdf:type owl:ObjectProperty ;
+  rdfs:domain :EconomicImpact ;
+  rdfs:range :Industry5.0Adoption .
+:impactsCollaboration rdf:type owl:ObjectProperty ;
+  rdfs:domain :PsychologicalImpact ;
+  rdfs:range :HumanMachineCollaboration .
+:impactsProcess rdf:type owl:ObjectProperty ;
+  rdfs:domain :VirtualReality ;
+  rdfs:range :Process .
+:integratesInto rdf:type owl:ObjectProperty ;
+  rdfs:domain :Technology ;
+  rdfs:range :Process .
+:integratesWith rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanCreativity ;
+  rdfs:range :MachineEfficiency .
+:interactsWith rdf:type owl:ObjectProperty ;
+  rdfs:domain :Human ;
+  rdfs:range :Machine .
+:maintainsAssurance rdf:type owl:ObjectProperty ;
+  rdfs:domain :CollaborativeProcess ;
+  rdfs:range :QualityAssurance .
+:measuresImpact rdf:type owl:ObjectProperty ;
+  rdfs:domain :Metric ;
+  rdfs:range :EnvironmentalImpact .
+:mitigatesRisk rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :Risk .
+:playsRoleIn rdf:type owl:ObjectProperty ;
+  rdfs:domain [ owl:unionOf ( :AI :Human ) ] ;
+  rdfs:range [ owl:unionOf ( :Industry5.0 :Industry5.0Process ) ] .
+:preservesBiodiversity rdf:type owl:ObjectProperty ;
+  rdfs:domain :IndustrialOperation ;
+  rdfs:range :Biodiversity .
+:prioritizesValue rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :SocietalValue .
+:promotesInclusivity rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanMachineTeam ;
+  rdfs:range :Inclusivity .
+:promotesPractice rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0 ;
+  rdfs:range :CircularEconomyPractice .
+:requiresSkill rdf:type owl:ObjectProperty ;
+  rdfs:domain :HumanWorker ;
+  rdfs:range :Skill .
+:supportsDesign rdf:type owl:ObjectProperty ;
+  rdfs:domain :EmergingTechnology ;
+  rdfs:range :HumanCentricDesign .
+:supportsSustainability rdf:type owl:ObjectProperty ;
+  rdfs:domain :Technology ;
+  rdfs:range :Sustainability .
+:tracksSustainability rdf:type owl:ObjectProperty ;
+  rdfs:domain :Metric ;
+  rdfs:range :SocialSustainability .
+:tracksWellBeingFor rdf:type owl:ObjectProperty ;
+  rdfs:domain :WellBeingMetric ;
+  rdfs:range :Human .
+:usedIn rdf:type owl:ObjectProperty ;
+  rdfs:domain :IoTDevice ;
+  rdfs:range :Manufacturing .
+:usesTrainingMethod rdf:type owl:ObjectProperty ;
+  rdfs:domain :Industry5.0Process ;
+  rdfs:range :TrainingMethod .
+
+:addressesDisruption owl:inverseOf :hasStrategy .
+:appliesTo owl:inverseOf :hasEthicalConsideration .
+:appliesToInteraction owl:inverseOf :hasSafetyProtocol .
+:challengesIntegration owl:inverseOf :hasChallengeWith .
+:collaboratesWith owl:inverseOf :interactsWith .
+:hasEconomicImpact owl:inverseOf :impactsAdoption .
+:hasIntegratedTechnology owl:inverseOf :integratesInto .
+:hasMetric owl:inverseOf :measuresImpact .
+:hasMitigation owl:inverseOf :mitigatesRisk .
+:hasPsychologicalImpact owl:inverseOf :impactsCollaboration .
+:hasTrackingMetric owl:inverseOf :tracksSustainability .
+:hasWellBeingMetric owl:inverseOf :tracksWellBeingFor .
+:hasResilienceAchievement owl:equivalentProperty :achievesResilience .
+:isAchievesResilienceBy rdf:type owl:ObjectProperty .
+:isAchievesResilienceBy rdfs:domain :Resilience .
+:isAchievesResilienceBy rdfs:range :SupplyChain .
+:isAchievesResilienceBy owl:inverseOf :achievesResilience .
+:hasAdaptation owl:equivalentProperty :adaptsTo .
+:isAdaptsToBy rdf:type owl:ObjectProperty .
+:isAdaptsToBy rdfs:domain :ClimateChange .
+:isAdaptsToBy rdfs:range :ResilientSystem .
+:isAdaptsToBy owl:inverseOf :adaptsTo .
+:hasAddressingMethod owl:equivalentProperty :addressesDifference .
+:isAddressesDifferenceBy rdf:type owl:ObjectProperty .
+:isAddressesDifferenceBy rdfs:domain :CulturalDifference .
+:isAddressesDifferenceBy rdfs:range :GlobalHumanMachineCollaboration .
+:isAddressesDifferenceBy owl:inverseOf :addressesDifference .
+:hasEffectOn owl:equivalentProperty :affectsTransformation .
+:isAffectsTransformationBy rdf:type owl:ObjectProperty .
+:isAffectsTransformationBy rdfs:domain :WorkforceTransformation .
+:isAffectsTransformationBy rdfs:range :Industry5.0 .
+:isAffectsTransformationBy owl:inverseOf :affectsTransformation .
+:hasApplication owl:equivalentProperty :appliesAnalytics .
+:isAppliesAnalyticsBy rdf:type owl:ObjectProperty .
+:isAppliesAnalyticsBy rdfs:domain :Industry5.0 .
+:isAppliesAnalyticsBy rdfs:range :BigDataAnalytics .
+:isAppliesAnalyticsBy owl:inverseOf :appliesAnalytics .
+:differsFrom owl:equivalentProperty :buildsOn .
+:hasBuildingRelation owl:equivalentProperty :buildsOn .
+:hasDifference owl:equivalentProperty :buildsOn .
+:isBuildsOnBy rdf:type owl:ObjectProperty .
+:isBuildsOnBy rdfs:domain :Industry4.0 .
+:isBuildsOnBy rdfs:range :Industry5.0 .
+:isBuildsOnBy owl:inverseOf :buildsOn .
+:hasCollaboration owl:equivalentProperty :collaboratesIn .
+:isCollaboratesInBy rdf:type owl:ObjectProperty .
+:isCollaboratesInBy rdfs:domain :Industry5.0Ecosystem .
+:isCollaboratesInBy rdfs:range :Stakeholder .
+:isCollaboratesInBy owl:inverseOf :collaboratesIn .
+:hasValueCreation owl:equivalentProperty :createsValueBeyond .
+:isCreatesValueBeyondBy rdf:type owl:ObjectProperty .
+:isCreatesValueBeyondBy rdfs:domain :Economics .
+:isCreatesValueBeyondBy rdfs:range :Value .
+:isCreatesValueBeyondBy owl:inverseOf :createsValueBeyond .
+:hasSustainabilityGoal owl:equivalentProperty :definesGoal .
+:isDefinesGoalBy rdf:type owl:ObjectProperty .
+:isDefinesGoalBy rdfs:domain :SustainabilityGoal .
+:isDefinesGoalBy rdfs:range :Industry5.0 .
+:isDefinesGoalBy owl:inverseOf :definesGoal .
+:isEmpowersInBy rdf:type owl:ObjectProperty .
+:isEmpowersInBy rdfs:domain :DecisionMaking .
+:isEmpowersInBy rdfs:range :Industry5.0 .
+:isEmpowersInBy owl:inverseOf :empowersIn .
+:hasEnablement owl:equivalentProperty :enablesResilience .
+:isEnablesResilienceBy rdf:type owl:ObjectProperty .
+:isEnablesResilienceBy rdfs:domain :Resilience .
+:isEnablesResilienceBy rdfs:range :CyberPhysicalSystem .
+:isEnablesResilienceBy owl:inverseOf :enablesResilience .
+:hasEnhancement owl:equivalentProperty :enhancesTraceability .
+:isEnhancesTraceabilityBy rdf:type owl:ObjectProperty .
+:isEnhancesTraceabilityBy rdfs:domain :Traceability .
+:isEnhancesTraceabilityBy rdfs:range :Blockchain .
+:isEnhancesTraceabilityBy owl:inverseOf :enhancesTraceability .
+:hasResilienceMechanism owl:equivalentProperty :ensuresResilience .
+:isEnsuresResilienceBy rdf:type owl:ObjectProperty .
+:isEnsuresResilienceBy rdfs:domain :Resilience .
+:isEnsuresResilienceBy rdfs:range :Collaboration .
+:isEnsuresResilienceBy owl:inverseOf :ensuresResilience .
+:isExistsBetweenBy rdf:type owl:ObjectProperty .
+:isExistsBetweenBy rdfs:domain :Machine .
+:isExistsBetweenBy rdfs:range :FeedbackMechanism .
+:isExistsBetweenBy owl:inverseOf :existsBetween .
+:isExistsInBy rdf:type owl:ObjectProperty .
+:isExistsInBy rdfs:domain :Implementation .
+:isExistsInBy rdfs:range :Challenge .
+:isExistsInBy owl:inverseOf :existsIn .
+:hasStandard owl:equivalentProperty :followsStandard .
+:isFollowsStandardBy rdf:type owl:ObjectProperty .
+:isFollowsStandardBy rdfs:domain :Standard .
+:isFollowsStandardBy rdfs:range :Industry5.0 .
+:isFollowsStandardBy owl:inverseOf :followsStandard .
+:isAIRoleOf rdf:type owl:ObjectProperty .
+:isAIRoleOf rdfs:domain :Role .
+:isAIRoleOf rdfs:range :Industry5.0 .
+:isAIRoleOf owl:inverseOf :hasAIRole .
+:isEmpowermentOf rdf:type owl:ObjectProperty .
+:isEmpowermentOf rdfs:domain :DecisionMaking .
+:isEmpowermentOf rdfs:range :Worker .
+:isEmpowermentOf owl:inverseOf :hasEmpowerment .
+:isExpectedOutcomeOf rdf:type owl:ObjectProperty .
+:isExpectedOutcomeOf rdfs:domain :Outcome .
+:isExpectedOutcomeOf rdfs:range :Industry5.0 .
+:isExpectedOutcomeOf owl:inverseOf :hasExpectedOutcome .
+:isFeedbackMechanismOf rdf:type owl:ObjectProperty .
+:isFeedbackMechanismOf rdfs:domain :FeedbackMechanism .
+:isFeedbackMechanismOf rdfs:range :Human .
+:isFeedbackMechanismOf owl:inverseOf :hasFeedbackMechanism .
+:isImpactOnOf rdf:type owl:ObjectProperty .
+:isImpactOnOf rdfs:domain :Process .
+:isImpactOnOf rdfs:range :AugmentedReality .
+:isImpactOnOf owl:inverseOf :hasImpactOn .
+:isImplementationChallengeOf rdf:type owl:ObjectProperty .
+:isImplementationChallengeOf rdfs:domain :Challenge .
+:isImplementationChallengeOf rdfs:range :Industry5.0 .
+:isImplementationChallengeOf owl:inverseOf :hasImplementationChallenge .
+:promotesInclusivity owl:equivalentProperty :hasInclusivityPromotion .
+:isInclusivityPromotionOf rdf:type owl:ObjectProperty .
+:isInclusivityPromotionOf rdfs:domain :Inclusivity .
+:isInclusivityPromotionOf rdfs:range :HumanMachineTeam .
+:isInclusivityPromotionOf owl:inverseOf :hasInclusivityPromotion .
+:integratesWith owl:equivalentProperty :hasIntegration .
+:isIntegrationOf rdf:type owl:ObjectProperty .
+:isIntegrationOf rdfs:domain :MachineEfficiency .
+:isIntegrationOf rdfs:range :HumanCreativity .
+:isIntegrationOf owl:inverseOf :hasIntegration .
+:hasInteractionMethod owl:inverseOf :hasInteractionMethod .
+:isKeyProcessOf rdf:type owl:ObjectProperty .
+:isKeyProcessOf rdfs:domain :KeyProcess .
+:isKeyProcessOf rdfs:range :Industry5.0 .
+:isKeyProcessOf owl:inverseOf :hasKeyProcess .
+:isLifecycleStageOf rdf:type owl:ObjectProperty .
+:isLifecycleStageOf rdfs:domain :LifecycleStage .
+:isLifecycleStageOf rdfs:range :Industry5.0Product .
+:isLifecycleStageOf owl:inverseOf :hasLifecycleStage .
+:isMainPillarOf rdf:type owl:ObjectProperty .
+:isMainPillarOf rdfs:domain :MainPillar .
+:isMainPillarOf rdfs:range :Industry5.0 .
+:isMainPillarOf owl:inverseOf :hasMainPillar .
+:maintainsAssurance owl:equivalentProperty :hasMaintenance .
+:isMaintenanceOf rdf:type owl:ObjectProperty .
+:isMaintenanceOf rdfs:domain :QualityAssurance .
+:isMaintenanceOf rdfs:range :CollaborativeProcess .
+:isMaintenanceOf owl:inverseOf :hasMaintenance .
+:isMassPersonalizationOf rdf:type owl:ObjectProperty .
+:isMassPersonalizationOf rdfs:domain :MassPersonalization .
+:isMassPersonalizationOf rdfs:range :Industry5.0Process .
+:isMassPersonalizationOf owl:inverseOf :hasMassPersonalization .
+:preservesBiodiversity owl:equivalentProperty :hasPreservation .
+:isPreservationOf rdf:type owl:ObjectProperty .
+:isPreservationOf rdfs:domain :Biodiversity .
+:isPreservationOf rdfs:range :IndustrialOperation .
+:isPreservationOf owl:inverseOf :hasPreservation .
+:prioritizesValue owl:equivalentProperty :hasPrioritizedValue .
+:isPrioritizedValueOf rdf:type owl:ObjectProperty .
+:isPrioritizedValueOf rdfs:domain :SocietalValue .
+:isPrioritizedValueOf rdfs:range :Industry5.0 .
+:isPrioritizedValueOf owl:inverseOf :hasPrioritizedValue .
+:promotesPractice owl:equivalentProperty :hasPromotion .
+:isPromotionOf rdf:type owl:ObjectProperty .
+:isPromotionOf rdfs:domain :CircularEconomyPractice .
+:isPromotionOf rdfs:range :Industry5.0 .
+:isPromotionOf owl:inverseOf :hasPromotion .
+:isRoleOf rdf:type owl:ObjectProperty .
+:isRoleOf rdfs:domain :Role .
+:isRoleOf rdfs:range :Human .
+:isRoleOf owl:inverseOf :hasRole .
+:requiresSkill owl:equivalentProperty :hasSkill .
+:isSkillOf rdf:type owl:ObjectProperty .
+:isSkillOf rdfs:domain :Skill .
+:isSkillOf rdfs:range :HumanWorker .
+:isSkillOf owl:inverseOf :hasSkill .
+:isStakeholderOf rdf:type owl:ObjectProperty .
+:isStakeholderOf rdfs:domain :Stakeholder .
+:isStakeholderOf rdfs:range :Industry5.0 .
+:isStakeholderOf owl:inverseOf :hasStakeholder .
+:isSupportedBy rdf:type owl:ObjectProperty .
+:isSupportedBy rdfs:domain [ owl:unionOf ( :EmergingTechnology :Technology ) ] .
+:isSupportedBy rdfs:range [ owl:unionOf ( :HumanCentricDesign :Sustainability ) ] .
+:isSupportedBy owl:inverseOf :hasSupportingTechnology .
+:usesTrainingMethod owl:equivalentProperty :hasTrainingMethod .
+:isTrainingMethodOf rdf:type owl:ObjectProperty .
+:isTrainingMethodOf rdfs:domain :TrainingMethod .
+:isTrainingMethodOf rdfs:range :Industry5.0Process .
+:isTrainingMethodOf owl:inverseOf :hasTrainingMethod .
+:isTypeOf rdf:type owl:ObjectProperty .
+:isTypeOf rdfs:domain :Type .
+:isTypeOf rdfs:range :Machine .
+:isTypeOf owl:inverseOf :hasType .
+:usedIn owl:equivalentProperty :hasUsage .
+:isUsageOf rdf:type owl:ObjectProperty .
+:isUsageOf rdfs:domain :Manufacturing .
+:isUsageOf rdfs:range :IoTDevice .
+:isUsageOf owl:inverseOf :hasUsage .
+:isImpactsProcessBy rdf:type owl:ObjectProperty .
+:isImpactsProcessBy rdfs:domain :Process .
+:isImpactsProcessBy rdfs:range :VirtualReality .
+:isImpactsProcessBy owl:inverseOf :impactsProcess .
+:hasRolePlayer rdf:type owl:ObjectProperty .
+:hasRolePlayer rdfs:domain [ owl:unionOf ( :Industry5.0 :Industry5.0Process ) ] .
+:hasRolePlayer rdfs:range [ owl:unionOf ( :AI :Human ) ] .
+:hasRolePlayer owl:inverseOf :playsRoleIn .
+:isSupportsDesignBy rdf:type owl:ObjectProperty .
+:isSupportsDesignBy rdfs:domain :HumanCentricDesign .
+:isSupportsDesignBy rdfs:range :EmergingTechnology .
+:isSupportsDesignBy owl:inverseOf :supportsDesign .
+:isSupportsSustainabilityBy rdf:type owl:ObjectProperty .
+:isSupportsSustainabilityBy rdfs:domain :Sustainability .
+:isSupportsSustainabilityBy rdfs:range :Technology .
+:isSupportsSustainabilityBy owl:inverseOf :supportsSustainability .
+
+:hasName rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Human :HumanWorker :Worker :Machine :Technology :AI :IoTDevice :Process :Industry5.0Process :KeyProcess :Role :Skill :Stakeholder :Standard ) ] ;
+  rdfs:range xsd:string .
+
+:hasDescription rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :SustainabilityGoal :EthicalConsideration :Risk :Challenge :Outcome :PsychologicalImpact :EconomicImpact :EnvironmentalImpact :SocietalValue :CircularEconomyPractice :TrainingMethod :FeedbackMechanism ) ] ;
+  rdfs:range xsd:string .
+
+:hasValue rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Metric :WellBeingMetric :MachineEfficiency :Resilience :EconomicImpact :EnvironmentalImpact ) ] ;
+  rdfs:range xsd:double .
+
+:hasStatus rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Industry5.0Process :Collaboration :SupplyChain :ResilientSystem ) ] ;
+  rdfs:range xsd:string .
+
+:hasVersion rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Industry5.0Process :Standard :Technology ) ] ;
+  rdfs:range xsd:string .
+
+:hasExpertiseLevel rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :HumanWorker :Skill ) ] ;
+  rdfs:range xsd:string .
+
+:hasDuration rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Process :Industry5.0Process :TrainingMethod ) ] ;
+  rdfs:range xsd:duration .
+
+:hasTargetDate rdf:type owl:DatatypeProperty ;
+  rdfs:domain :SustainabilityGoal ;
+  rdfs:range xsd:date .
+
+:hasProbability rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Risk ;
+  rdfs:range xsd:float .
+
+:hasSeverity rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Risk ;
+  rdfs:range xsd:integer .
+
+:hasEfficiencyRating rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Machine :Technology :CyberPhysicalSystem ) ] ;
+  rdfs:range xsd:double .
+
+:hasAdoptionYear rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Industry5.0Adoption :Technology ) ] ;
+  rdfs:range xsd:integer .
+
+:hasImpactLevel rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :PsychologicalImpact :EconomicImpact :EnvironmentalImpact ) ] ;
+  rdfs:range xsd:string .
+
+:hasScore rdf:type owl:DatatypeProperty ;
+  rdfs:domain :WellBeingMetric ;
+  rdfs:range xsd:float .
+
+:hasID rdf:type owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf ( :Standard :IoTDevice :Machine ) ] ;
+  rdfs:range xsd:string .
+
+:AugmentedReality rdfs:subClassOf :Technology .
+:BigDataAnalytics rdfs:subClassOf :Technology .
+:Blockchain rdfs:subClassOf :Technology .
+:CyberPhysicalSystem rdfs:subClassOf :Technology .
+:EmergingTechnology rdfs:subClassOf :Technology .
+:IoTDevice rdfs:subClassOf :Technology .
+:Machine rdfs:subClassOf :Technology .
+:VirtualReality rdfs:subClassOf :Technology .
+:CollaborativeProcess rdfs:subClassOf :Process .
+:Industry5.0Process rdfs:subClassOf :Process .
+:KeyProcess rdfs:subClassOf :Process .
+:Manufacturing rdfs:subClassOf :Process .
+:HumanCobotInteraction rdfs:subClassOf :Interaction .
+:HumanMachineCollaboration rdfs:subClassOf :Collaboration .
+:GlobalHumanMachineCollaboration rdfs:subClassOf :HumanMachineCollaboration .
+:HumanMachineTeam rdfs:subClassOf :HumanMachineCollaboration .
+:SocialSustainability rdfs:subClassOf :Sustainability .
+:Resilience rdfs:subClassOf :MainPillar .
+:Sustainability rdfs:subClassOf :MainPillar .
+:HumanCentricDesign rdfs:subClassOf :MainPillar .
+:Worker rdfs:subClassOf :Human .
+:SupplyChain rdfs:subClassOf :Process .
+:IndustrialOperation rdfs:subClassOf :Process .
+:Industry5.0Ecosystem rdfs:subClassOf :Collaboration .
+:Human owl:disjointWith :Machine .
+:Human owl:disjointWith :Technology .
+:Human owl:disjointWith :Process .
+:Machine owl:disjointWith :Process .
+:Technology owl:disjointWith :Process .
+:Technology owl:disjointWith :Collaboration .
+:Process owl:disjointWith :Collaboration .
+
+:AI rdfs:comment "Artificial Intelligence systems used in Industry 5.0 for decision support, predictive modeling, and ethical automation in manufacturing." .
+:AugmentedReality rdfs:comment "Technology that overlays digital information on the real world, used in Industry 5.0 for training, remote assistance, and process visualization." .
+:BigDataAnalytics rdfs:comment "The process of examining large datasets to uncover patterns and insights, applied in Industry 5.0 for optimization and decision-making." .
+:Biodiversity rdfs:comment "The variety of life in industrial ecosystems, preserved through sustainable practices in Industry 5.0 operations." .
+:Blockchain rdfs:comment "A distributed ledger technology enhancing traceability and security in Industry 5.0 supply chains and processes." .
+:Challenge rdfs:comment "Obstacles or issues in implementing Industry 5.0, such as skill gaps or regulatory hurdles." .
+:CircularEconomyPractice rdfs:comment "Practices promoting resource reuse, recycling, and zero-waste in Industry 5.0 to achieve sustainability." .
+:ClimateChange rdfs:comment "Global environmental changes that resilient systems in Industry 5.0 must adapt to." .
+:Collaboration rdfs:comment "Joint efforts between entities, such as humans and machines, central to Industry 5.0." .
+:CollaborativeProcess rdfs:comment "Processes involving multiple participants, like human-machine teams in Industry 5.0." .
+:CulturalDifference rdfs:comment "Variations in cultural norms addressed in global human-machine collaborations in Industry 5.0." .
+:CyberPhysicalSystem rdfs:comment "Integrated systems of computational and physical processes enabling resilience in Industry 5.0." .
+:DecisionMaking rdfs:comment "The process of making choices, empowered for workers in Industry 5.0." .
+:EconomicImpact rdfs:comment "Financial effects of Industry 5.0 adoption, such as cost savings or job creation." .
+:Economics rdfs:comment "The study of resource allocation, extended beyond in Industry 5.0 value creation." .
+:EmergingTechnology rdfs:comment "New technologies supporting human-centric design in Industry 5.0." .
+:EnvironmentalImpact rdfs:comment "Effects on the environment measured in Industry 5.0 sustainability efforts." .
+:EthicalConsideration rdfs:comment "Moral aspects applied to collaborations in Industry 5.0, like privacy and bias mitigation." .
+:FeedbackMechanism rdfs:comment "Systems for exchanging information between humans and machines in Industry 5.0." .
+:GlobalDisruption rdfs:comment "Worldwide events addressed by resilience strategies in Industry 5.0." .
+:GlobalHumanMachineCollaboration rdfs:comment "Worldwide partnerships between humans and machines in Industry 5.0." .
+:Human rdfs:comment "Individuals central to Industry 5.0's human-centric approach." .
+:HumanCentricDesign rdfs:comment "Design principles prioritizing human well-being and involvement in Industry 5.0." .
+:HumanCobotInteraction rdfs:comment "Interactions between humans and collaborative robots in Industry 5.0." .
+:HumanCreativity rdfs:comment "Human innovative abilities integrated with machine efficiency in Industry 5.0." .
+:HumanMachineCollaboration rdfs:comment "Synergy between humans and machines, a key pillar of Industry 5.0." .
+:HumanMachineTeam rdfs:comment "Teams consisting of humans and machines promoting inclusivity in Industry 5.0." .
+:HumanWorker rdfs:comment "Human employees requiring skills and well-being tracking in Industry 5.0." .
+:Implementation rdfs:comment "The process of putting Industry 5.0 concepts into practice." .
+:Inclusivity rdfs:comment "Promotion of diversity and equity in human-machine teams in Industry 5.0." .
+:IndustrialOperation rdfs:comment "Core activities in industry, preserving biodiversity in Industry 5.0." .
+:Industry4.0 rdfs:comment "The previous industrial revolution focused on automation, which Industry 5.0 builds upon." .
+:Industry5.0 rdfs:comment "A human-centric industrial paradigm emphasizing collaboration, sustainability, and resilience." .
+:Industry5.0Adoption rdfs:comment "The process of implementing Industry 5.0, with associated economic impacts." .
+:Industry5.0Ecosystem rdfs:comment "Interconnected systems and stakeholders in Industry 5.0 collaborations." .
+:Industry5.0Process rdfs:comment "Key processes in Industry 5.0, such as personalized production." .
+:Industry5.0Product rdfs:comment "Products developed under Industry 5.0 with defined lifecycle stages." .
+:IntegrationChallenge rdfs:comment "Difficulties in integrating with legacy systems in Industry 5.0." .
+:Interaction rdfs:comment "Ways humans and machines communicate in Industry 5.0." .
+:IoTDevice rdfs:comment "Internet of Things devices used in manufacturing for monitoring and optimization in Industry 5.0." .
+:KeyProcess rdfs:comment "Essential processes defining Industry 5.0 operations." .
+:LegacySystem rdfs:comment "Older systems presenting integration challenges in Industry 5.0." .
+:LifecycleStage rdfs:comment "Phases in the life of Industry 5.0 products, from design to recycling." .
+:Machine rdfs:comment "Automated devices collaborating with humans in Industry 5.0." .
+:MachineEfficiency rdfs:comment "The performance level of machines integrated with human creativity in Industry 5.0." .
+:MainPillar rdfs:comment "Core principles of Industry 5.0, such as human-centricity, sustainability, and resilience." .
+:Manufacturing rdfs:comment "Production processes enhanced by IoT and other technologies in Industry 5.0." .
+:MassPersonalization rdfs:comment "Customized production at scale in Industry 5.0 processes." .
+:Metric rdfs:comment "Measurements for impacts like environmental or social sustainability in Industry 5.0." .
+:Outcome rdfs:comment "Expected results from Industry 5.0 implementations, like increased productivity." .
+:Process rdfs:comment "General industrial procedures integrated with technologies in Industry 5.0." .
+:PsychologicalImpact rdfs:comment "Mental effects of human-machine collaboration in Industry 5.0." .
+:QualityAssurance rdfs:comment "Maintenance of standards in collaborative processes in Industry 5.0." .
+:Resilience rdfs:comment "The ability to withstand disruptions, a key pillar of Industry 5.0." .
+:ResilienceStrategy rdfs:comment "Plans to address global disruptions in Industry 5.0." .
+:ResilientSystem rdfs:comment "Systems that adapt to changes like climate change in Industry 5.0." .
+:Risk rdfs:comment "Potential hazards mitigated in Industry 5.0." .
+:Role rdfs:comment "Positions humans or AI play in Industry 5.0 processes." .
+:SafetyProtocol rdfs:comment "Measures for safe human-cobot interactions in Industry 5.0." .
+:Skill rdfs:comment "Abilities required for human workers in Industry 5.0." .
+:SocialSustainability rdfs:comment "Societal aspects of sustainability tracked in Industry 5.0." .
+:SocietalValue rdfs:comment "Values like inclusivity prioritized in Industry 5.0." .
+:Stakeholder rdfs:comment "Parties involved in Industry 5.0 ecosystems, such as manufacturers and workers." .
+:Standard rdfs:comment "Guidelines followed in Industry 5.0, like ISO standards." .
+:SupplyChain rdfs:comment "Networks achieving resilience in Industry 5.0." .
+:Sustainability rdfs:comment "Environmental and social goals, a core pillar of Industry 5.0." .
+:SustainabilityGoal rdfs:comment "Defined objectives for sustainability in Industry 5.0." .
+:Technology rdfs:comment "Tools supporting sustainability and processes in Industry 5.0." .
+:Traceability rdfs:comment "Tracking enhanced by blockchain in Industry 5.0." .
+:TrainingMethod rdfs:comment "Approaches used for worker upskilling in Industry 5.0." .
+:Type rdfs:comment "Categories of machines in Industry 5.0 collaborations." .
+:Value rdfs:comment "Benefits created beyond economics in Industry 5.0." .
+:VirtualReality rdfs:comment "Immersive technology impacting processes in Industry 5.0." .
+:WellBeingMetric rdfs:comment "Measurements tracking human well-being in Industry 5.0." .
+:Worker rdfs:comment "Employees empowered in decision-making in Industry 5.0." .
+:WorkforceTransformation rdfs:comment "Changes in the workforce due to Industry 5.0." .
+:achievesResilience rdfs:comment "Property linking supply chains to their resilience achievements in Industry 5.0." .
+:adaptsTo rdfs:comment "Property indicating how resilient systems adapt to climate change." .
+:addressesDifference rdfs:comment "Property showing how global collaborations address cultural differences." .
+:addressesDisruption rdfs:comment "Property linking resilience strategies to global disruptions." .
+:affectsTransformation rdfs:comment "Property describing Industry 5.0's effect on workforce transformation." .
+:appliesAnalytics rdfs:comment "Property indicating application of big data analytics in Industry 5.0." .
+:appliesTo rdfs:comment "Property applying ethical considerations to collaborations." .
+:appliesToInteraction rdfs:comment "Property applying safety protocols to human-cobot interactions." .
+:buildsOn rdfs:comment "Property showing how Industry 5.0 builds on Industry 4.0." .
+:challengesIntegration rdfs:comment "Property indicating challenges legacy systems pose to integration." .
+:collaboratesIn rdfs:comment "Property for stakeholder collaboration in Industry 5.0 ecosystems." .
+:collaboratesWith rdfs:comment "Property for machine collaboration with humans." .
+:createsValueBeyond rdfs:comment "Property for creating value beyond economics." .
+:definesGoal rdfs:comment "Property defining sustainability goals in Industry 5.0." .
+:differsFrom rdfs:comment "Property highlighting differences between Industry 5.0 and 4.0." .
+:empowersIn rdfs:comment "Property showing Industry 5.0 empowerment in decision-making." .
+:enablesResilience rdfs:comment "Property for cyber-physical systems enabling resilience." .
+:enhancesTraceability rdfs:comment "Property for blockchain enhancing traceability." .
+:ensuresResilience rdfs:comment "Property ensuring resilience in collaborations." .
+:existsBetween rdfs:comment "Property for feedback mechanisms existing between humans and machines." .
+:existsIn rdfs:comment "Property for challenges existing in implementations." .
+:followsStandard rdfs:comment "Property for Industry 5.0 following standards." .
+:hasAIRole rdfs:comment "Property for Industry 5.0 having AI roles." .
+:hasAdaptation rdfs:comment "Property for resilient systems having adaptations." .
+:hasAddressingMethod rdfs:comment "Property for collaborations having methods to address differences." .
+:hasApplication rdfs:comment "Property for big data analytics having applications." .
+:hasBuildingRelation rdfs:comment "Property for building relations between Industry 5.0 and 4.0." .
+:hasChallengeWith rdfs:comment "Property for integration challenges with legacy systems." .
+:hasCollaboration rdfs:comment "Property for stakeholders having collaborations." .
+:hasDifference rdfs:comment "Property for differences in Industry 5.0." .
+:hasEconomicImpact rdfs:comment "Property for adoption having economic impacts." .
+:hasEffectOn rdfs:comment "Property for Industry 5.0 having effects on transformation." .
+:hasEmpowerment rdfs:comment "Property for workers having empowerment." .
+:hasEnablement rdfs:comment "Property for systems having resilience enablement." .
+:hasEnhancement rdfs:comment "Property for blockchain having enhancements." .
+:hasEthicalConsideration rdfs:comment "Property for collaborations having ethical considerations." .
+:hasExpectedOutcome rdfs:comment "Property for Industry 5.0 having expected outcomes." .
+:hasFeedbackMechanism rdfs:comment "Property for humans having feedback mechanisms." .
+:hasImpactOn rdfs:comment "Property for augmented reality having impacts on processes." .
+:hasImplementationChallenge rdfs:comment "Property for Industry 5.0 having implementation challenges." .
+:hasInclusivityPromotion rdfs:comment "Property for teams having inclusivity promotions." .
+:hasIntegratedTechnology rdfs:comment "Property for processes having integrated technologies." .
+:hasIntegration rdfs:comment "Property for creativity having integrations." .
+:hasInteractionMethod rdfs:comment "Property for interactions having methods." .
+:hasKeyProcess rdfs:comment "Property for Industry 5.0 having key processes." .
+:hasLifecycleStage rdfs:comment "Property for products having lifecycle stages." .
+:hasMainPillar rdfs:comment "Property for Industry 5.0 having main pillars." .
+:hasMaintenance rdfs:comment "Property for processes having maintenance." .
+:hasMassPersonalization rdfs:comment "Property for processes having mass personalization." .
+:hasMetric rdfs:comment "Property for impacts having metrics." .
+:hasMitigation rdfs:comment "Property for risks having mitigations." .
+:hasPreservation rdfs:comment "Property for operations having preservations." .
+:hasPrioritizedValue rdfs:comment "Property for Industry 5.0 having prioritized values." .
+:hasPromotion rdfs:comment "Property for Industry 5.0 having promotions." .
+:hasPsychologicalImpact rdfs:comment "Property for collaborations having psychological impacts." .
+:hasResilienceAchievement rdfs:comment "Property for supply chains having resilience achievements." .
+:hasResilienceMechanism rdfs:comment "Property for collaborations having resilience mechanisms." .
+:hasRole rdfs:comment "Property for humans having roles." .
+:hasSafetyProtocol rdfs:comment "Property for interactions having safety protocols." .
+:hasSkill rdfs:comment "Property for workers having skills." .
+:hasStakeholder rdfs:comment "Property for Industry 5.0 having stakeholders." .
+:hasStandard rdfs:comment "Property for Industry 5.0 having standards." .
+:hasStrategy rdfs:comment "Property for disruptions having strategies." .
+:hasSupportingTechnology rdfs:comment "Property for designs or sustainability having supporting technologies." .
+:hasSustainabilityGoal rdfs:comment "Property for Industry 5.0 having sustainability goals." .
+:hasTrackingMetric rdfs:comment "Property for sustainability having tracking metrics." .
+:hasTrainingMethod rdfs:comment "Property for processes having training methods." .
+:hasType rdfs:comment "Property for machines having types." .
+:hasUsage rdfs:comment "Property for IoT devices having usages." .
+:hasValueCreation rdfs:comment "Property for values having creations." .
+:hasWellBeingMetric rdfs:comment "Property for humans having well-being metrics." .
+:impactsAdoption rdfs:comment "Property for impacts affecting adoption." .
+:impactsCollaboration rdfs:comment "Property for impacts affecting collaborations." .
+:impactsProcess rdfs:comment "Property for virtual reality impacting processes." .
+:integratesInto rdfs:comment "Property for technologies integrating into processes." .
+:integratesWith rdfs:comment "Property for creativity integrating with efficiency." .
+:interactsWith rdfs:comment "Property for humans interacting with machines." .
+:maintainsAssurance rdfs:comment "Property for processes maintaining assurance." .
+:measuresImpact rdfs:comment "Property for metrics measuring impacts." .
+:mitigatesRisk rdfs:comment "Property for Industry 5.0 mitigating risks." .
+:playsRoleIn rdfs:comment "Property for entities playing roles in processes." .
+:preservesBiodiversity rdfs:comment "Property for operations preserving biodiversity." .
+:prioritizesValue rdfs:comment "Property for Industry 5.0 prioritizing values." .
+:promotesInclusivity rdfs:comment "Property for teams promoting inclusivity." .
+:promotesPractice rdfs:comment "Property for Industry 5.0 promoting circular practices." .
+:requiresSkill rdfs:comment "Property for workers requiring skills." .
+:supportsDesign rdfs:comment "Property for technologies supporting designs." .
+:supportsSustainability rdfs:comment "Property for technologies supporting sustainability." .
+:tracksSustainability rdfs:comment "Property for metrics tracking sustainability." .
+:tracksWellBeingFor rdfs:comment "Property for metrics tracking well-being." .
+:usedIn rdfs:comment "Property for devices used in manufacturing." .
+:usesTrainingMethod rdfs:comment "Property for processes using training methods." .
+:hasName rdfs:comment "Data property for names of entities like humans or technologies." .
+:hasDescription rdfs:comment "Data property for descriptions of goals or considerations." .
+:hasValue rdfs:comment "Data property for numerical values of metrics or impacts." .
+:hasStatus rdfs:comment "Data property for status of processes or systems." .
+:hasVersion rdfs:comment "Data property for versions of processes or technologies." .
+:hasExpertiseLevel rdfs:comment "Data property for expertise levels of skills or workers." .
+:hasDuration rdfs:comment "Data property for durations of processes or methods." .
+:hasTargetDate rdfs:comment "Data property for target dates of goals." .
+:hasProbability rdfs:comment "Data property for probabilities of risks." .
+:hasSeverity rdfs:comment "Data property for severity levels of risks." .
+:hasEfficiencyRating rdfs:comment "Data property for efficiency ratings of machines." .
+:hasAdoptionYear rdfs:comment "Data property for adoption years of technologies." .
+:hasImpactLevel rdfs:comment "Data property for impact levels of various impacts." .
+:hasScore rdfs:comment "Data property for scores of well-being metrics." .
+:hasID rdfs:comment "Data property for identifiers of standards or devices." .
+:isAchievesResilienceBy rdfs:comment "Inverse property of achievesResilience." .
+:isAdaptsToBy rdfs:comment "Inverse property of adaptsTo." .
+:isAddressesDifferenceBy rdfs:comment "Inverse property of addressesDifference." .
+:isAffectsTransformationBy rdfs:comment "Inverse property of affectsTransformation." .
+:isAppliesAnalyticsBy rdfs:comment "Inverse property of appliesAnalytics." .
+:isBuildsOnBy rdfs:comment "Inverse property of buildsOn." .
+:isCollaboratesInBy rdfs:comment "Inverse property of collaboratesIn." .
+:isCreatesValueBeyondBy rdfs:comment "Inverse property of createsValueBeyond." .
+:isDefinesGoalBy rdfs:comment "Inverse property of definesGoal." .
+:isEmpowersInBy rdfs:comment "Inverse property of empowersIn." .
+:isEnablesResilienceBy rdfs:comment "Inverse property of enablesResilience." .
+:isEnhancesTraceabilityBy rdfs:comment "Inverse property of enhancesTraceability." .
+:isEnsuresResilienceBy rdfs:comment "Inverse property of ensuresResilience." .
+:isExistsBetweenBy rdfs:comment "Inverse property of existsBetween." .
+:isExistsInBy rdfs:comment "Inverse property of existsIn." .
+:isFollowsStandardBy rdfs:comment "Inverse property of followsStandard." .
+:isAIRoleOf rdfs:comment "Inverse property of hasAIRole." .
+:isEmpowermentOf rdfs:comment "Inverse property of hasEmpowerment." .
+:isExpectedOutcomeOf rdfs:comment "Inverse property of hasExpectedOutcome." .
+:isFeedbackMechanismOf rdfs:comment "Inverse property of hasFeedbackMechanism." .
+:isImpactOnOf rdfs:comment "Inverse property of hasImpactOn." .
+:isImplementationChallengeOf rdfs:comment "Inverse property of hasImplementationChallenge." .
+:isInclusivityPromotionOf rdfs:comment "Inverse property of hasInclusivityPromotion." .
+:isIntegrationOf rdfs:comment "Inverse property of hasIntegration." .
+:isKeyProcessOf rdfs:comment "Inverse property of hasKeyProcess." .
+:isLifecycleStageOf rdfs:comment "Inverse property of hasLifecycleStage." .
+:isMainPillarOf rdfs:comment "Inverse property of hasMainPillar." .
+:isMaintenanceOf rdfs:comment "Inverse property of hasMaintenance." .
+:isMassPersonalizationOf rdfs:comment "Inverse property of hasMassPersonalization." .
+:isPreservationOf rdfs:comment "Inverse property of hasPreservation." .
+:isPrioritizedValueOf rdfs:comment "Inverse property of hasPrioritizedValue." .
+:isPromotionOf rdfs:comment "Inverse property of hasPromotion." .
+:isRoleOf rdfs:comment "Inverse property of hasRole." .
+:isSkillOf rdfs:comment "Inverse property of hasSkill." .
+:isStakeholderOf rdfs:comment "Inverse property of hasStakeholder." .
+:isSupportedBy rdfs:comment "Inverse property of hasSupportingTechnology." .
+:isTrainingMethodOf rdfs:comment "Inverse property of hasTrainingMethod." .
+:isTypeOf rdfs:comment "Inverse property of hasType." .
+:isUsageOf rdfs:comment "Inverse property of hasUsage." .
+:isImpactsProcessBy rdfs:comment "Inverse property of impactsProcess." .
+:hasRolePlayer rdfs:comment "Inverse property of playsRoleIn." .
+:isSupportsDesignBy rdfs:comment "Inverse property of supportsDesign." .
+:isSupportsSustainabilityBy rdfs:comment "Inverse property of supportsSustainability." .
+
+:HumanCentricity rdf:type :MainPillar ;
+  rdfs:label "Human Centricity" ;
+  :hasDescription "Pillar focusing on human well-being and collaboration in Industry 5.0" .
+
+:SustainabilityPillar rdf:type :MainPillar ;
+  rdfs:label "Sustainability" ;
+  :hasDescription "Pillar emphasizing environmental and social sustainability" .
+
+:ResiliencePillar rdf:type :MainPillar ;
+  rdfs:label "Resilience" ;
+  :hasDescription "Pillar for robustness against disruptions" .
+
+:Operator rdf:type :Role ;
+  rdfs:label "Operator" ;
+  :hasDescription "Human role in operating machines" .
+
+:Supervisor rdf:type :Role ;
+  rdfs:label "Supervisor" ;
+  :hasDescription "Human role in overseeing processes" .
+
+:Designer rdf:type :Role ;
+  rdfs:label "Designer" ;
+  :hasDescription "Human role in designing products and systems" .
+
+:JohnDoe rdf:type :Human ;
+  rdf:type :HumanWorker ;
+  rdf:type :Worker ;
+  rdfs:label "John Doe" ;
+  :hasName "John Doe" ;
+  :hasRole :Operator ;
+  :hasSkill :DigitalLiteracy .
+
+:JaneSmith rdf:type :Human ;
+  rdf:type :HumanWorker ;
+  rdf:type :Worker ;
+  rdfs:label "Jane Smith" ;
+  :hasName "Jane Smith" ;
+  :hasRole :Supervisor ;
+  :hasSkill :ProblemSolving .
+
+:CobotUR5 rdf:type :Machine ;
+  rdf:type :Technology ;
+  rdfs:label "Universal Robots UR5 Cobot" ;
+  :hasType :CobotType ;
+  :hasName "UR5" ;
+  :collaboratesWith :JohnDoe ;
+  :hasEfficiencyRating "95.0"^^xsd:double .
+
+:AISystem rdf:type :AI ;
+  rdf:type :Technology ;
+  rdfs:label "AI Decision Support System" ;
+  :playsRoleIn :PredictiveMaintenanceProcess ;
+  :hasName "AI Predictor" .
+
+:IoTSensor rdf:type :IoTDevice ;
+  rdf:type :Technology ;
+  rdfs:label "IoT Sensor for Monitoring" ;
+  :usedIn :ManufacturingProcess ;
+  :hasID "IOT-001" .
+
+:PersonalizedProduction rdf:type :Industry5.0Process ;
+  rdf:type :KeyProcess ;
+  rdf:type :Process ;
+  rdfs:label "Personalized Production" ;
+  :hasMassPersonalization :CustomProducts ;
+  :hasDuration "PT2H"^^xsd:duration .
+
+:PredictiveMaintenance rdf:type :Industry5.0Process ;
+  rdf:type :KeyProcess ;
+  rdf:type :Process ;
+  rdfs:label "Predictive Maintenance" ;
+  :hasIntegratedTechnology :AIPredictor .
+
+:CollaborativeAssembly rdf:type :Industry5.0Process ;
+  rdf:type :CollaborativeProcess ;
+  rdf:type :Process ;
+  rdfs:label "Collaborative Assembly" ;
+  :maintainsAssurance :QualityChecks .
+
+:ABB rdf:type :Stakeholder ;
+  rdfs:label "ABB Company" ;
+  :hasName "ABB" ;
+  :collaboratesIn :Industry50Ecosystem ;
+  :hasDescription "Company implementing Industry 5.0 solutions in manufacturing" .
+
+:SEAT rdf:type :Stakeholder ;
+  rdfs:label "SEAT Automotive" ;
+  :hasName "SEAT" ;
+  :collaboratesIn :Industry50Ecosystem ;
+  :hasDescription "Spanish car manufacturer using cobots and AI" .
+
+:Manufacturer rdf:type :Stakeholder ;
+  rdfs:label "General Manufacturer" ;
+  :hasName "Manufacturer Inc." .
+
+:Regulator rdf:type :Stakeholder ;
+  rdfs:label "EU Regulator" ;
+  :hasName "European Commission" .
+
+:Consumer rdf:type :Stakeholder ;
+  rdfs:label "End Consumer" ;
+  :hasName "General Consumer" .
+
+:DigitalLiteracy rdf:type :Skill ;
+  rdfs:label "Digital Literacy" ;
+  :hasExpertiseLevel "Advanced" .
+
+:ProblemSolving rdf:type :Skill ;
+  rdfs:label "Problem Solving" ;
+  :hasExpertiseLevel "Expert" .
+
+:StressLevel rdf:type :WellBeingMetric ;
+  rdfs:label "Stress Level Metric" ;
+  :hasScore "2.5"^^xsd:float ;
+  :tracksWellBeingFor :JohnDoe .
+
+:JobSatisfaction rdf:type :WellBeingMetric ;
+  rdfs:label "Job Satisfaction Metric" ;
+  :hasScore "8.0"^^xsd:float ;
+  :tracksWellBeingFor :JaneSmith .
+
+:PrivacyProtection rdf:type :EthicalConsideration ;
+  rdfs:label "Privacy Protection" ;
+  :appliesTo :HumanMachineCollaborationExample .
+
+:BiasMitigation rdf:type :EthicalConsideration ;
+  rdfs:label "Bias Mitigation" ;
+  :appliesTo :AIBasedCollaboration .
+
+:VRSimulation rdf:type :TrainingMethod ;
+  rdfs:label "VR Simulation Training" ;
+  :hasDuration "PT1H"^^xsd:duration .
+
+:OnTheJobLearning rdf:type :TrainingMethod ;
+  rdfs:label "On-the-Job Learning" ;
+  :hasDuration "PT8H"^^xsd:duration .
+
+:CarbonNeutrality rdf:type :SustainabilityGoal ;
+  rdfs:label "Carbon Neutrality" ;
+  :hasTargetDate "2030-01-01"^^xsd:date .
+
+:WasteReduction rdf:type :SustainabilityGoal ;
+  rdfs:label "Waste Reduction" ;
+  :hasTargetDate "2025-12-31"^^xsd:date .
+
+:CO2Emissions rdf:type :Metric ;
+  rdfs:label "CO2 Emissions Metric" ;
+  :hasValue "500.0"^^xsd:double ;
+  :measuresImpact :EnvironmentalImpactExample .
+
+:EnergyEfficiency rdf:type :Metric ;
+  rdfs:label "Energy Efficiency Metric" ;
+  :hasValue "85.0"^^xsd:double .
+
+:DiversifiedSuppliers rdf:type :ResilienceStrategy ;
+  rdfs:label "Diversified Suppliers" ;
+  :addressesDisruption :SupplyChainDisruption .
+
+:PredictiveAnalytics rdf:type :ResilienceStrategy ;
+  rdfs:label "Predictive Analytics" ;
+  :addressesDisruption :GlobalPandemic .
+
+:ProductDesign rdf:type :LifecycleStage ;
+  rdfs:label "Product Design Stage" .
+
+:ProductRecycling rdf:type :LifecycleStage ;
+  rdfs:label "Product Recycling Stage" .
+
+:ARTraining rdf:type :AugmentedReality ;
+  rdfs:label "AR for Training" ;
+  :hasImpactOn :TrainingProcess .
+
+:VRDesign rdf:type :VirtualReality ;
+  rdfs:label "VR for Design" ;
+  :impactsProcess :DesignProcess .
+
+:SupplyChainTraceability rdf:type :Blockchain ;
+  rdfs:label "Blockchain for Traceability" ;
+  :enhancesTraceability :ProductTraceability .
+
+:LegacyIntegrationIssue rdf:type :IntegrationChallenge ;
+  rdfs:label "Legacy System Integration Challenge" ;
+  :hasChallengeWith :OldFactorySystem .
+
+:SmartFactoryCPS rdf:type :CyberPhysicalSystem ;
+  rdfs:label "Smart Factory CPS" ;
+  :enablesResilience :FactoryResilience .
+
+:Exoskeleton rdf:type :EmergingTechnology ;
+  rdfs:label "Exoskeleton" ;
+  :supportsDesign :ErgonomicDesign .
+
+:AnalyticsTool rdf:type :BigDataAnalytics ;
+  rdfs:label "Big Data Analytics Tool" ;
+  :appliesAnalytics :DataOptimization .
+
+:Industry40 rdf:type :Industry4.0 ;
+  rdfs:label "Industry 4.0" ;
+  :differsFrom :Industry50 .
+
+:Industry50 rdf:type :Industry5.0 ;
+  rdfs:label "Industry 5.0" ;
+  :hasMainPillar :HumanCentricity ;
+  :hasMainPillar :SustainabilityPillar ;
+  :hasMainPillar :ResiliencePillar ;
+  :buildsOn :Industry40 ;
+  :hasKeyProcess :PersonalizedProduction ;
+  :hasStakeholder :ABB ;
+  :hasStakeholder :SEAT ;
+  :hasSustainabilityGoal :CarbonNeutrality ;
+  :hasExpectedOutcome :IncreasedProductivity .
+
+:Industry50Adoption rdf:type :Industry5.0Adoption ;
+  rdfs:label "Industry 5.0 Adoption" ;
+  :hasEconomicImpact :JobCreation ;
+  :hasAdoptionYear "2025"^^xsd:integer .
+
+:JobCreation rdf:type :EconomicImpact ;
+  rdfs:label "Job Creation Impact" ;
+  :hasImpactLevel "High" .
+
+:SupplyChainDisruption rdf:type :GlobalDisruption ;
+  rdfs:label "Supply Chain Disruption" .
+
+:GlobalPandemic rdf:type :GlobalDisruption ;
+  rdfs:label "Global Pandemic" .
+
+:HumanMachineCollaborationExample rdf:type :HumanMachineCollaboration ;
+  rdfs:label "Human-Machine Collaboration Example" ;
+  :hasPsychologicalImpact :ReducedStress ;
+  :hasEthicalConsideration :PrivacyProtection .
+
+:ReducedStress rdf:type :PsychologicalImpact ;
+  rdfs:label "Reduced Stress" ;
+  :hasImpactLevel "Positive" .
+
+:ZeroWasteDesign rdf:type :CircularEconomyPractice ;
+  rdfs:label "Zero Waste Design" .
+
+:EcoFriendlyMaterials rdf:type :Biodiversity ;
+  rdfs:label "Eco-Friendly Materials Preservation" .
+
+:CommunityImpact rdf:type :SocialSustainability ;
+  rdfs:label "Community Impact" ;
+  :hasTrackingMetric :DiversityIndex .
+
+:DiversityIndex rdf:type :Metric ;
+  rdfs:label "Diversity Index" ;
+  :hasValue "75.0"^^xsd:double .
+
+:FloodResistantFactory rdf:type :ResilientSystem ;
+  rdfs:label "Flood-Resistant Factory" ;
+  :adaptsTo :ClimateChangeImpact .
+
+:ClimateChangeImpact rdf:type :ClimateChange ;
+  rdfs:label "Climate Change Impact" .
+
+:ValueBeyondEconomics rdf:type :Value ;
+  rdfs:label "Value Beyond Economics" ;
+  :createsValueBeyond :EconomicValue .
+
+:EconomicValue rdf:type :Economics ;
+  rdfs:label "Economic Value" .
+
+:MassPersonalizationExample rdf:type :MassPersonalization ;
+  rdfs:label "Mass Personalization Example" .
+
+:Industry50Ecosystem rdf:type :Industry5.0Ecosystem ;
+  rdfs:label "Industry 5.0 Ecosystem" ;
+  :hasCollaboration :StakeholderCollaboration .
+
+:Industry50Product rdf:type :Industry5.0Product ;
+  rdfs:label "Industry 5.0 Product" ;
+  :hasLifecycleStage :ProductDesign ;
+  :hasLifecycleStage :ProductRecycling .
+
+:QualityChecks rdf:type :QualityAssurance ;
+  rdfs:label "Quality Checks" .
+
+:ManufacturingProcess rdf:type :Manufacturing ;
+  rdfs:label "Manufacturing Process" .
+
+:TraceabilitySystem rdf:type :Traceability ;
+  rdfs:label "Traceability System" .
+
+:OldFactorySystem rdf:type :LegacySystem ;
+  rdfs:label "Old Factory System" .
+
+:ErgonomicDesign rdf:type :HumanCentricDesign ;
+  rdfs:label "Ergonomic Design" .
+
+:DataOptimization rdf:type :Process ;
+  rdfs:label "Data Optimization Process" .
+
+:IncreasedProductivity rdf:type :Outcome ;
+  rdfs:label "Increased Productivity" .
+
+:FactoryResilience rdf:type :Resilience ;
+  rdfs:label "Factory Resilience" .
+
+:SupplyChainRisk rdf:type :Risk ;
+  rdfs:label "Supply Chain Risk" ;
+  :hasProbability "0.3"^^xsd:float ;
+  :hasSeverity "5"^^xsd:integer .
+
+:ISO14001 rdf:type :Standard ;
+  rdfs:label "ISO 14001" ;
+  :hasID "ISO-14001" .
+
+:CobotType rdf:type :Type ;
+  rdfs:label "Cobot Type" .
+
+:EnvironmentalImpactExample rdf:type :EnvironmentalImpact ;
+  rdfs:label "Environmental Impact Example" ;
+  :hasImpactLevel "Medium" .
+
+:AIPredictor rdf:type :Technology ;
+  rdfs:label "AI Predictor" .
+
+:CustomProducts rdf:type :MassPersonalization ;
+  rdfs:label "Custom Products" .
+
+:TrainingProcess rdf:type :Process ;
+  rdfs:label "Training Process" .
+
+:DesignProcess rdf:type :Process ;
+  rdfs:label "Design Process" .
+
+:PredictiveMaintenanceProcess rdf:type :Industry5.0Process ;
+  rdfs:label "Predictive Maintenance Process" .
+
+:StakeholderCollaboration rdf:type :Collaboration ;
+  rdfs:label "Stakeholder Collaboration" .
+
+
+:HumanCentricity rdfs:comment "A main pillar of Industry 5.0 emphasizing human well-being, creativity, and collaboration with machines." .
+:SustainabilityPillar rdfs:comment "A core pillar of Industry 5.0 focusing on environmental, social, and economic sustainability in industrial practices." .
+:ResiliencePillar rdfs:comment "A key pillar of Industry 5.0 ensuring robustness and adaptability of systems against disruptions like supply chain issues or climate change." .
+:Operator rdfs:comment "A human role in Industry 5.0 involving the operation and monitoring of machines and processes in collaborative environments." .
+:Supervisor rdfs:comment "A human role in Industry 5.0 responsible for overseeing teams, processes, and ensuring efficient human-machine interactions." .
+:Designer rdfs:comment "A human role in Industry 5.0 focused on creating innovative products, systems, and workflows that integrate human creativity with technology." .
+:JohnDoe rdfs:comment "An example human worker in Industry 5.0, acting as an operator with skills in digital literacy." .
+:JaneSmith rdfs:comment "An example human worker in Industry 5.0, serving as a supervisor with problem-solving skills." .
+:CobotUR5 rdfs:comment "A Universal Robots UR5 collaborative robot (cobot) used in Industry 5.0 for safe human-robot interactions in tasks like assembly, with a payload of up to 5kg." .
+:AISystem rdfs:comment "An AI system in Industry 5.0 providing decision support and predictive modeling in processes like maintenance." .
+:IoTSensor rdfs:comment "An IoT device in Industry 5.0 for real-time monitoring and data collection in manufacturing environments." .
+:PersonalizedProduction rdfs:comment "An Industry 5.0 process enabling mass customization of products through AI-driven design and on-demand manufacturing." .
+:PredictiveMaintenance rdfs:comment "An Industry 5.0 process using AI and sensors to predict equipment failures and reduce downtime in manufacturing." .
+:CollaborativeAssembly rdfs:comment "An Industry 5.0 process where humans and cobots work together on assembly tasks, ensuring quality and efficiency." .
+:ABB rdfs:comment "ABB is a global technology company advancing Industry 5.0 through sustainable manufacturing, advanced robotics, and AI integration in industrial automation as of 2025." .
+:SEAT rdfs:comment "SEAT is a Spanish automotive manufacturer implementing Industry 5.0 with cobots and AI for personalized vehicle production and efficient assembly lines." .
+:Manufacturer rdfs:comment "A general stakeholder representing companies involved in producing goods under Industry 5.0 principles." .
+:Regulator rdfs:comment "A stakeholder like the European Commission overseeing policies and standards for Industry 5.0 implementations." .
+:Consumer rdfs:comment "End-users benefiting from customized and sustainable products in Industry 5.0 ecosystems." .
+:DigitalLiteracy rdfs:comment "A skill required for human workers in Industry 5.0 to effectively use digital tools and interfaces." .
+:ProblemSolving rdfs:comment "A key skill for human workers in Industry 5.0 to address complex challenges in human-machine collaborations." .
+:StressLevel rdfs:comment "A well-being metric tracking stress levels of humans in Industry 5.0 work environments." .
+:JobSatisfaction rdfs:comment "A well-being metric measuring job satisfaction among workers in Industry 5.0 settings." .
+:PrivacyProtection rdfs:comment "An ethical consideration in Industry 5.0 ensuring data privacy in human-machine interactions." .
+:BiasMitigation rdfs:comment "An ethical consideration in Industry 5.0 to reduce biases in AI-driven collaborations." .
+:VRSimulation rdfs:comment "A training method using virtual reality for immersive skill development in Industry 5.0." .
+:OnTheJobLearning rdfs:comment "A practical training method involving real-time learning during work in Industry 5.0." .
+:CarbonNeutrality rdfs:comment "A sustainability goal in Industry 5.0 aiming for zero net carbon emissions by a target date." .
+:WasteReduction rdfs:comment "A sustainability goal in Industry 5.0 focused on minimizing waste through circular practices." .
+:CO2Emissions rdfs:comment "A metric measuring carbon dioxide emissions as part of environmental impact assessment in Industry 5.0." .
+:EnergyEfficiency rdfs:comment "A metric evaluating energy use efficiency in Industry 5.0 processes and systems." .
+:DiversifiedSuppliers rdfs:comment "A resilience strategy in Industry 5.0 to mitigate risks by using multiple suppliers." .
+:PredictiveAnalytics rdfs:comment "A resilience strategy employing data analysis to forecast and prevent disruptions in Industry 5.0." .
+:ProductDesign rdfs:comment "A lifecycle stage in Industry 5.0 products involving innovative and sustainable design." .
+:ProductRecycling rdfs:comment "A lifecycle stage in Industry 5.0 promoting recycling and circular economy principles." .
+:ARTraining rdfs:comment "Augmented reality application for training workers in Industry 5.0 processes." .
+:VRDesign rdfs:comment "Virtual reality tool impacting design processes in Industry 5.0." .
+:SupplyChainTraceability rdfs:comment "A blockchain implementation enhancing traceability in Industry 5.0 supply chains." .
+:LegacyIntegrationIssue rdfs:comment "A challenge in integrating older systems with new Industry 5.0 technologies." .
+:SmartFactoryCPS rdfs:comment "A cyber-physical system enabling smart, resilient factories in Industry 5.0." .
+:Exoskeleton rdfs:comment "An emerging technology supporting human-centric design by enhancing worker capabilities in Industry 5.0." .
+:AnalyticsTool rdfs:comment "A big data analytics tool applied for optimization in Industry 5.0." .
+:Industry40 rdfs:comment "The fourth industrial revolution focused on automation and digitalization, which Industry 5.0 extends with human-centric elements." .
+:Industry50 rdfs:comment "Industry 5.0 as a paradigm shifting towards human-machine synergy, sustainability, and resilience in manufacturing." .
+:Industry50Adoption rdfs:comment "The process of adopting Industry 5.0 practices, leading to impacts like job creation." .
+:JobCreation rdfs:comment "An economic impact of Industry 5.0 adoption, fostering new roles in human-machine teams." .
+:SupplyChainDisruption rdfs:comment "A global disruption example addressed by resilience strategies in Industry 5.0." .
+:GlobalPandemic rdfs:comment "A worldwide disruption like COVID-19, mitigated through Industry 5.0 resilient systems." .
+:HumanMachineCollaborationExample rdfs:comment "An illustrative example of human-machine teamwork in Industry 5.0, reducing stress and enhancing ethics." .
+:ReducedStress rdfs:comment "A positive psychological impact from effective human-machine collaboration in Industry 5.0." .
+:ZeroWasteDesign rdfs:comment "A circular economy practice in Industry 5.0 aiming for designs with no waste output." .
+:EcoFriendlyMaterials rdfs:comment "Materials preserving biodiversity in Industry 5.0 industrial operations." .
+:CommunityImpact rdfs:comment "Social sustainability aspect tracking effects on communities in Industry 5.0." .
+:DiversityIndex rdfs:comment "A metric for tracking diversity as part of social sustainability in Industry 5.0." .
+:FloodResistantFactory rdfs:comment "A resilient system designed to adapt to flooding caused by climate change in Industry 5.0." .
+:ClimateChangeImpact rdfs:comment "Impacts from climate change that Industry 5.0 systems must adapt to." .
+:ValueBeyondEconomics rdfs:comment "Non-economic values like societal well-being created in Industry 5.0." .
+:EconomicValue rdfs:comment "Economic aspects extended by Industry 5.0 to include broader societal benefits." .
+:MassPersonalizationExample rdfs:comment "An example of mass personalization in Industry 5.0 production processes." .
+:Industry50Ecosystem rdfs:comment "An ecosystem of interconnected stakeholders and technologies in Industry 5.0." .
+:Industry50Product rdfs:comment "A product developed under Industry 5.0 principles with full lifecycle management." .
+:QualityChecks rdfs:comment "Quality assurance measures maintained in collaborative processes in Industry 5.0." .
+:ManufacturingProcess rdfs:comment "A general manufacturing process enhanced by Industry 5.0 technologies." .
+:TraceabilitySystem rdfs:comment "A system for tracking products enhanced by blockchain in Industry 5.0." .
+:OldFactorySystem rdfs:comment "A legacy system posing integration challenges in transitioning to Industry 5.0." .
+:ErgonomicDesign rdfs:comment "Human-centric design focusing on ergonomics in Industry 5.0 workplaces." .
+:DataOptimization rdfs:comment "A process optimized through big data analytics in Industry 5.0." .
+:IncreasedProductivity rdfs:comment "An expected outcome of Industry 5.0 implementations like enhanced efficiency." .
+:FactoryResilience rdfs:comment "Resilience achieved in factories through cyber-physical systems in Industry 5.0." .
+:SupplyChainRisk rdfs:comment "A risk in supply chains mitigated by Industry 5.0 strategies." .
+:ISO14001 rdfs:comment "An international standard for environmental management systems followed in Industry 5.0." .
+:CobotType rdfs:comment "A type of machine representing collaborative robots in Industry 5.0." .
+:EnvironmentalImpactExample rdfs:comment "An example of environmental impact measured in Industry 5.0 sustainability efforts." .
+:AIPredictor rdfs:comment "An AI technology for prediction in processes like maintenance in Industry 5.0." .
+:CustomProducts rdfs:comment "Customized products resulting from mass personalization in Industry 5.0." .
+:TrainingProcess rdfs:comment "A process for worker training impacted by augmented reality in Industry 5.0." .
+:DesignProcess rdfs:comment "A design process enhanced by virtual reality in Industry 5.0." .
+:PredictiveMaintenanceProcess rdfs:comment "A specific process for predictive maintenance where AI plays a role in Industry 5.0." .
+:StakeholderCollaboration rdfs:comment "Collaboration among stakeholders in Industry 5.0 ecosystems." .
+
+
+
+
+
+
+
